@@ -26,7 +26,7 @@ nav {
 }
 
 nav a {
-    color:#423b3a;
+    color:#2b2a2a;
     margin: 0 1em;
     text-decoration: none;
     font-weight: 800;
@@ -53,6 +53,17 @@ main.me {
     letter-spacing: 5px;
 }
 
+main.me h1 {
+    display: inline-block;
+}
+
+main.me img {
+    width: 20vw;
+    float: right;
+    padding: 1em 1em 0 0;
+  
+}
+
 main.about {
     display: none;
     padding: 2.5rem;
@@ -67,3 +78,142 @@ main.about img {
     float: right;
     padding: 0 0 .5rem 1rem;
 }
+
+main.projects {
+    display: none;
+    padding: 1rem 2rem 2rem;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+figure {
+    max-width: 300px;
+    padding: 0;
+    margin: 1em 0;
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    background-color: #1f1f1f;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    margin: -5px 0 0 0;
+}
+
+main.contact {
+    display: none;
+}
+
+main.contact h1 {
+    font-size: 3em;
+    text-shadow: 3px -2px 0px #8b2635;
+    margin: 0 1em 1em;
+}
+
+main.contact img.vector {
+    float: right;
+    width: 30vw;
+    padding: 2em 1em 0 0;
+}
+
+main.contact img.icon {
+    width: 3vw;
+    float: none;
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+
+main.contact a {
+    display: flex;
+    width: 30%;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    margin:  0 0 0 4em;
+    text-decoration: none;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 900px) {
+
+    .container {
+        width: 85vw;
+        height: 90vh;
+        position: absolute;
+    }
+
+    main.me {
+        margin: 0;
+    }
+
+    main.me h1 {
+        margin:0;
+    }
+
+    main.me img {
+        width: 60%;
+        position: relative;
+        float: none;
+        padding: 0;
+        margin: 5vw 10vw;
+    }
+
+    main.about {
+        padding: 0 2.5rem;
+    }
+
+    main.about img {
+        width: 60%;
+        position: absolute;
+        padding: 0;
+        margin: 0 10%;
+        bottom:5%;
+    }
+
+    .flexContainer {
+        flex-direction: row;
+        justify-content: space-around; 
+        overflow: inherit;
+
+    }
+
+    figure {
+        max-width: 60vw;
+    }
+
+    main.contact h1 {
+        font-size: 4em;
+    }
+
+    main.contact img.vector {
+        width: 80%;
+        float: none;
+        position: absolute;
+        bottom: 5vh;
+        padding: 2em ;
+    }
+
+    main.contact a {
+        font-size: 1.5em;
+        margin: 0 0 0 3em;
+    }
+
+    main.contact img.icon {
+        float: none;
+        display: inline-block;
+        padding: 0 1em 0 0;
+        width: 4vw;
+    }
+  }
