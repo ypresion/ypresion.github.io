@@ -45,8 +45,8 @@ main {
     height: 70%;
 }
 
-main.me {
-    display: none;
+main.me { 
+    display: block;
     margin: 0 0 0 1em;
     font-size: 3em;
     color: #1f1f1f;
@@ -195,6 +195,7 @@ main.contact a {
 
     main.contact h1 {
         font-size: 4em;
+        margin: 0 0 1em 0;
     }
 
     main.contact img.vector {
